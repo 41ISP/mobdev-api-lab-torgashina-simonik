@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: bruno-collection
+config:
+  proxy:
+    inherit: false
+    config:
+      protocol: http
+      hostname: 10.0.55.52
+      port: 3128
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  auth:
+    type: bearer
+    token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3OTA3NjM2OTA0NTcsInVzZXJuYW1lIjoiZmZoZGhmIiwiaWF0IjoxNzkwNzYzNjkwLCJleHAiOjE3OTA4NTAwOTB9.LSJY6WoO9Yi8EAQtkynnuAskjQ4eGyUFmA4xHawZ7fw
+  variables:
+    - name: url
+      value: https://api.kitek-pg.ru/api/marketplace
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
